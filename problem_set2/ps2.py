@@ -269,4 +269,8 @@ class Ps2Test(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    # unittest.main()
+    start= input('Enter your start location:')
+    end = input('Enter your End location:')
+    max_outdoors = int(input('How far are you willing to walk outdoors (steps)?'))
+    print(directed_dfs(load_map('mit_map.txt'),start, end, 1000000, max_outdoors))
